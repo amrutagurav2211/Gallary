@@ -1,0 +1,18 @@
+ 
+
+ <b> fullScreen View of Image </b>
+
+ <!-- <div class="fullscreen-image">
+    <img *ngIf="selectedPhoto" [src]="selectedPhoto.url" alt="Fullscreen Image">
+  </div> -->
+
+  <!-- <img [src]="dtt.url" [alt]="dtt.name" routerLink="/fullscreen" > -->
+
+  <div class="container"> 
+    <table>
+        <tr class="space" *ngFor=" let dtt of selectedPhoto" > 
+            <td><img [src]="dtt.url" [alt]="dtt.name"></td>
+        </tr>
+    
+    </table>
+  </div>

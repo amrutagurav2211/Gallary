@@ -1,0 +1,14 @@
+<div class="container-fluid"><br>
+<b style="font-size: 20; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Photos</b>
+
+<button class="btn btn-danger" style="margin-left:1030px ;" (click)="deleteSelected()">Delete Selected</button>
+<table>
+    <tr class="space" *ngFor=" let dtt of dt" > 
+        <td><img [src]="dtt.thumbnailUrl" [alt]="dtt.name" (click)="toggleSelect(dtt)"></td>
+     <!-- <img [src]="dtt.thumbnailUrl" [alt]="dtt.name" routerLink="/fullscreen" >  -->
+    </tr>
+
+</table>
+
+
+</div>
